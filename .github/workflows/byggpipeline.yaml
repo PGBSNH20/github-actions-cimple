@@ -1,1 +1,7 @@
 name: Vår fösta workflow
+on: [push]
+jobs:
+  build:
+    name: Build job
+    runs-on: ubuntu-latest
+    
