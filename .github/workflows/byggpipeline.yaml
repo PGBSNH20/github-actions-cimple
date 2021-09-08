@@ -4,4 +4,10 @@ jobs:
   build:
     name: Build job
     runs-on: ubuntu-latest
-    
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-dotnet
+      with:
+        dotnet-version: 5.0.x
+    - run: dotnet build
